@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Privacy Policy · ContextKey</title>
+  <meta name="description" content="ContextKey privacy policy. ContextKey runs entirely on your device. We operate no servers and collect no personal data.">
+  <link rel="canonical" href="https://contextkey.app/privacy.html">
+  <meta name="theme-color" content="#0a0d12">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ContextKey">
+  <meta property="og:url" content="https://contextkey.app/privacy.html">
+  <meta property="og:title" content="ContextKey Privacy Policy">
+  <meta property="og:description" content="ContextKey runs on your device. No servers, no accounts, no tracking.">
+  <meta property="og:image" content="https://contextkey.app/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="/" aria-label="ContextKey home"><img src="/favicon.svg" alt="" width="28" height="28"><span>ContextKey</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu"><span></span><span></span></button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary">
+        <a href="/#how">How it works</a><a href="/#features">Features</a><a href="/#opportunity">Opportunity</a>
+        <a class="btn btn-sm" href="mailto:hello@contextkey.app?subject=ContextKey%3A%20partnership%20%2F%20investment">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="wrap narrow">
+      <a class="back" href="/">← Back to ContextKey</a>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: [EFFECTIVE DATE] · Last updated: [LAST UPDATED]</p>
+
+      <div class="summary">
+        <p><strong>The short version:</strong> ContextKey runs on your device. We don't operate servers, we don't require an account, and we don't collect, store, sell, or share your personal data. Your Signal cards, health readings, calendar details, notes and voice notes stay on your iPhone (and your paired Apple Watch). The keyboard never logs or transmits what you type.</p>
+      </div>
+
+      <p>This Privacy Policy explains how the ContextKey app for iPhone, its custom keyboard extension, and its Apple Watch companion app (together, "ContextKey" or the "App") handle information. ContextKey is published by [LEGAL NAME OR ENTITY] ("we," "us," or "our"). If you have questions, email <a href="mailto:hello@contextkey.app">hello@contextkey.app</a>.</p>
+
+      <h2>1. Our approach: on-device by design</h2>
+      <p>ContextKey has no backend. There is no ContextKey server, database, user account, analytics service, advertising SDK, or crash-reporting service that receives your data. All processing needed to build and insert your context happens locally on your device. Because we never receive your data, we can't view it, sell it, share it, or hand it over to anyone.</p>
+
+      <h2>2. Information the App accesses on your device</h2>
+      <p>Depending on which Signal cards you turn on, ContextKey may ask iOS for permission to read certain information. Every permission is optional, requested only when you enable a feature that needs it, and can be revoked at any time in iOS Settings. If you decline, the related card simply won't work; the rest of the App will.</p>
+      <table>
+        <thead><tr><th>Data</th><th>Why it's used</th><th>Where it goes</th></tr></thead>
+        <tbody>
+          <tr><td>Health data (e.g. heart rate) via Apple HealthKit</td><td>To display and inject readings on a Pulse or health-related Signal card</td><td>Read on device only. Never sent to us or any third party.</td></tr>
+          <tr><td>Calendar events via EventKit</td><td>To show and inject upcoming events on a Calendar card</td><td>Read on device only.</td></tr>
+          <tr><td>Location</td><td>To fetch local conditions for a Weather card</td><td>Used on device; see Section 4 for how weather is retrieved.</td></tr>
+          <tr><td>Microphone &amp; speech recognition</td><td>For the optional DICTATE NOTE feature, to turn your voice into text for a card</td><td>See Section 4.</td></tr>
+          <tr><td>Your Signal card settings, custom text and notes</td><td>To build the context you inject</td><td>Stored locally on your device in the App's private storage.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>3. The keyboard and "Allow Full Access"</h2>
+      <p>iOS displays a standard warning when a keyboard requests "Full Access." ContextKey's keyboard uses this access only to read your Signal cards and settings from storage shared with the ContextKey app on the same device. ContextKey's keyboard:</p>
+      <ul>
+        <li>does <strong>not</strong> record, store, or transmit your keystrokes or anything you type;</li>
+        <li>does <strong>not</strong> send any data to us or to any server we control;</li>
+        <li>only inserts text when you tap <strong>INJECT+</strong>, and only the cards you've selected.</li>
+      </ul>
+      <p>Once you insert context into another app (for example, Messages or an AI assistant), that text is handled by that app under its own privacy policy, just like anything else you type.</p>
+
+      <h2>4. Apple system services</h2>
+      <p>ContextKey relies on Apple frameworks built into iOS and watchOS. Some of these may involve Apple's own services, which are governed by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>, not ours. We never receive this data.</p>
+      <ul>
+        <li><strong>Weather.</strong> [DEVELOPER: confirm implementation.] If the Weather card uses Apple WeatherKit, your device sends an approximate location to Apple's weather service to retrieve current conditions. Apple does not share this with us, and it is not linked to your identity by us.</li>
+        <li><strong>Speech recognition.</strong> [DEVELOPER: confirm implementation.] DICTATE NOTE uses Apple's on-device speech recognition so your audio is processed on your iPhone. Audio recordings are not stored after transcription unless you choose to keep the note.</li>
+        <li><strong>Apple Watch.</strong> The Watch app syncs with your paired iPhone directly using Apple's WatchConnectivity framework. No ContextKey server is involved.</li>
+        <li><strong>App Store.</strong> Downloads, purchases, and any optional crash or usage data you've chosen to share with app developers in iOS Settings are handled by Apple. Apple may provide developers with aggregated, anonymized App Store and crash statistics.</li>
+      </ul>
+
+      <h2>5. Health data</h2>
+      <p>Health data obtained through HealthKit is used solely to provide the Signal card features you turn on. Consistent with Apple's requirements, we do not use HealthKit data for advertising or data mining, we do not sell it, we do not disclose it to third parties, and we do not store it in iCloud. ContextKey only reads health data; it does not write to Apple Health. [DEVELOPER: update if the App writes data to Health.]</p>
+
+      <h2>6. Data we collect</h2>
+      <p>None. We do not collect personal information through the App. We do not use cookies, trackers, analytics, or advertising identifiers, and we do not track you across apps or websites.</p>
+      <p>If you email us, we'll receive your email address and whatever you choose to include in your message. We use it only to reply, and we delete it when it's no longer needed.</p>
+
+      <h2>7. This website</h2>
+      <p>contextkey.app is a static website with no cookies, analytics, or tracking scripts. Our hosting provider may keep standard server logs (such as IP address and browser type) for security and operational purposes, under its own privacy policy.</p>
+
+      <h2>8. Storage, retention, and deletion</h2>
+      <p>Your data lives on your device in the App's sandboxed storage, protected by iOS encryption. It remains until you delete it in the App or delete the App. Deleting ContextKey removes its locally stored data from your iPhone and Apple Watch. Your device backups (iCloud or computer) are governed by your Apple settings.</p>
+
+      <h2>9. Sharing and sale of data</h2>
+      <p>We don't sell, rent, or share personal information, because we don't have any. ContextKey does not "sell" or "share" personal information as those terms are defined under the California Consumer Privacy Act (CCPA/CPRA) or similar U.S. state laws.</p>
+
+      <h2>10. Your rights</h2>
+      <p>Depending on where you live (including the EU/UK under GDPR, and California and other U.S. states), you may have rights to access, correct, delete, or port your personal data. Since all ContextKey data stays on your device, you can exercise these rights directly: view and edit your data in the App, revoke permissions in iOS Settings, or delete the App. For any other request, email <a href="mailto:hello@contextkey.app">hello@contextkey.app</a>.</p>
+
+      <h2>11. Children</h2>
+      <p>ContextKey is not directed to children under 13 (or the minimum age in your country), and we do not knowingly collect personal information from children.</p>
+
+      <h2>12. Security</h2>
+      <p>Keeping your data on your device, with no server to breach, is our main security measure. We also rely on iOS sandboxing, data protection, and permission controls.</p>
+
+      <h2>13. Changes to this policy</h2>
+      <p>If we change how ContextKey handles data, we'll update this page and the "Last updated" date. If a change is material (for example, if a future version ever introduced an optional online feature), we'll explain it in the App before it takes effect, and it will be opt-in.</p>
+
+      <h2>14. Contact</h2>
+      <p>[LEGAL NAME OR ENTITY]<br>[MAILING ADDRESS, optional but recommended]<br>Email: <a href="mailto:hello@contextkey.app">hello@contextkey.app</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <div class="foot-brand"><img src="/favicon.svg" alt="" width="22" height="22"><span>ContextKey</span></div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="/privacy.html">Privacy</a><a href="mailto:hello@contextkey.app">Contact</a>
+      </nav>
+      <p class="foot-legal">© <span data-year>2026</span> ContextKey. Patent pending. Apple, iPhone and Apple Watch are trademarks of Apple Inc.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://contextkey.app/sitemap.xml

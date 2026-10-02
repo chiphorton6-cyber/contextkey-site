@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ContextKey: your context, one tap away</title>
+  <meta name="description" content="ContextKey is an on-device keyboard that injects user-chosen context (time, pulse, weather, calendar, custom notes) into any app. Patent pending. Seeking investors, a co-founder, and development and distribution partners.">
+  <link rel="canonical" href="https://contextkey.app/">
+  <meta name="theme-color" content="#0a0d12">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ContextKey">
+  <meta property="og:url" content="https://contextkey.app/">
+  <meta property="og:title" content="ContextKey: your context, one tap away">
+  <meta property="og:description" content="On-device context injection from the keyboard, in any app. Patent pending. Looking for investors and partners.">
+  <meta property="og:image" content="https://contextkey.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ContextKey: Signal cards injected from your keyboard">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ContextKey: your context, one tap away">
+  <meta name="twitter:description" content="On-device context injection from the keyboard, in any app. Patent pending.">
+  <meta name="twitter:image" content="https://contextkey.app/og-image.png">
+
+  <!-- Icons (placeholders: swap with final artwork) -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="/style.css">
+  <script src="/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="/" aria-label="ContextKey home">
+        <img src="/favicon.svg" alt="" width="28" height="28">
+        <span>ContextKey</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#opportunity">Opportunity</a>
+        <a class="btn btn-sm" href="mailto:hello@contextkey.app?subject=ContextKey%3A%20partnership%20%2F%20investment">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Patent pending · Working iPhone build</p>
+          <h1>Your context.<br><span class="grad">One tap. Any app.</span></h1>
+          <p class="lede">ContextKey is a keyboard that drops the context you choose (time, pulse, weather, calendar, your own notes) into whatever you're typing. Fully on-device.</p>
+          <div class="cta-row">
+            <a class="btn btn-lg" href="mailto:hello@contextkey.app?subject=ContextKey%3A%20partnership%20%2F%20investment">Partner with us</a>
+            <a class="btn btn-ghost" href="#opportunity">The opportunity</a>
+          </div>
+        </div>
+
+        <!-- Phone mockup (pure CSS/HTML; replace with real screenshots later) -->
+        <div class="phone-wrap" aria-hidden="true">
+          <div class="phone">
+            <div class="notch"></div>
+            <div class="screen">
+              <div class="chat">
+                <div class="bubble them">How are you holding up today?</div>
+                <div class="bubble me">
+                  <span>Honestly a little wired</span><span class="caret"></span>
+                  <span class="injected" id="demo-inject"></span>
+                </div>
+              </div>
+              <div class="kb">
+                <div class="kb-cards">
+                  <button class="card on" data-inject="[2:47 PM, Thu]"><b>TIME</b><i>2:47 PM</i></button>
+                  <button class="card on" data-inject="[Pulse 96 bpm]"><b>PULSE</b><i>96 bpm</i></button>
+                  <button class="card" data-inject="[72°F, light rain]"><b>WEATHER</b><i>72° rain</i></button>
+                  <button class="card" data-inject="[Next: Standup 3:00 PM]"><b>CALENDAR</b><i>3:00 PM</i></button>
+                  <button class="card" data-inject="[Note: 2nd espresso]"><b>CUSTOM</b><i>note</i></button>
+                  <button class="card" data-inject="[Sleep: 5h 40m]"><b>CUSTOM</b><i>sleep</i></button>
+                </div>
+                <div class="kb-actions">
+                  <span class="kb-dictate">● DICTATE NOTE</span>
+                  <span class="kb-inject" id="demo-btn">INJECT+</span>
+                </div>
+                <div class="kb-keys">
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                  <span class="wide"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section">
+      <div class="wrap">
+        <p class="kicker">How it works</p>
+        <ol class="steps">
+          <li>
+            <span class="step-n">01</span>
+            <h3>Set your Signals</h3>
+            <p>Up to six cards: time, pulse, weather, calendar, or custom.</p>
+          </li>
+          <li>
+            <span class="step-n">02</span>
+            <h3>Type anywhere</h3>
+            <p>Switch to the ContextKey keyboard in any app.</p>
+          </li>
+          <li>
+            <span class="step-n">03</span>
+            <h3>Tap INJECT+</h3>
+            <p>Your selected context lands at the cursor.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section section-alt">
+      <div class="wrap">
+        <p class="kicker">Features</p>
+        <div class="features">
+          <article class="feature">
+            <h3>6 Signal cards</h3>
+            <p>Customizable live context: time, Apple Health pulse, weather, calendar, and custom text.</p>
+          </article>
+          <article class="feature">
+            <h3>INJECT+</h3>
+            <p>Choose exactly which cards go in. Nothing is inserted until you tap.</p>
+          </article>
+          <article class="feature">
+            <h3>DICTATE NOTE</h3>
+            <p>Add an optional voice note to any card, inserted as text.</p>
+          </article>
+          <article class="feature">
+            <h3>Apple Watch</h3>
+            <p>Companion app syncs directly with your iPhone.</p>
+          </article>
+        </div>
+        <p class="privacy-line"><strong>Private by design.</strong> No ContextKey servers, no account, no tracking. The keyboard never logs what you type. <a href="/privacy.html">Privacy policy →</a></p>
+      </div>
+    </section>
+
+    <!-- OPPORTUNITY -->
+    <section id="opportunity" class="section">
+      <div class="wrap opp">
+        <div>
+          <p class="kicker">Opportunity</p>
+          <h2>Built, protected, ready to scale.</h2>
+          <ul class="checks">
+            <li><strong>New input layer.</strong> On-device context injection from the keyboard, into any app, including AI assistants.</li>
+            <li><strong>Patent pending.</strong> Provisional application filed.</li>
+            <li><strong>Working product.</strong> iPhone keyboard and Apple Watch app built and running.</li>
+            <li><strong>Room to grow.</strong> Android and macOS planned.</li>
+          </ul>
+        </div>
+        <div class="ask">
+          <h3>Looking for</h3>
+          <ul>
+            <li>Investors</li>
+            <li>A co-founder or strategic partner</li>
+            <li>Development partners</li>
+            <li>Publishing and distribution partners</li>
+          </ul>
+          <a class="btn" href="mailto:hello@contextkey.app?subject=ContextKey%3A%20partnership%20%2F%20investment">Start a conversation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="wrap narrow center">
+        <h2>Let's talk.</h2>
+        <p class="lede">Demo and details available on request.</p>
+        <a class="btn btn-lg" href="mailto:hello@contextkey.app?subject=ContextKey%3A%20partnership%20%2F%20investment">hello@contextkey.app</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <div class="foot-brand">
+        <img src="/favicon.svg" alt="" width="22" height="22">
+        <span>ContextKey</span>
+      </div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="/privacy.html">Privacy</a>
+        <a href="mailto:hello@contextkey.app">Contact</a>
+      </nav>
+      <p class="foot-legal">© <span data-year>2026</span> ContextKey. Patent pending. Apple, iPhone and Apple Watch are trademarks of Apple Inc.</p>
+    </div>
+  </footer>
+</body>
+</html>
